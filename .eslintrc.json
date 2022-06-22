@@ -41,7 +41,8 @@
     "@typescript-eslint/no-non-null-assertion": "off",
     "prettier/prettier": "error",
     "import/prefer-default-export": "off",
-    "react/jsx-no-bind": "off"
+    "react/jsx-no-bind": "off",
+    "react/jsx-no-constructed-context-values": "off"
   },
   "settings": {
     "import/resolver": {

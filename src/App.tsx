@@ -4,6 +4,7 @@ import { Dashboard } from './components/Dashboard';
 import { Header } from './components/Header';
 import { NewTransactionModal } from './components/NewTransactionModal';
 import { GlobalStyles } from './styles/global';
+import { TransactionsProvider } from './hooks/useTransactions';
 
 Modal.setAppElement('#root'); // acessibilidade: diz que o elemneto root não está acessivel enqunto o modal estiver aberto
 
@@ -20,7 +21,7 @@ function App() {
   }
 
   return (
-    <>
+    <TransactionsProvider>
       <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
       <Dashboard />
       <NewTransactionModal
@@ -28,7 +29,7 @@ function App() {
         onRequestClose={handleCloseNewTransactionModal}
       />
       <GlobalStyles />
-    </>
+    </TransactionsProvider>
   );
 }
 
