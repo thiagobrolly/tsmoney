@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import gtag from 'ga-gtag';
 import Modal from 'react-modal';
 import { Header } from './components/Header';
 import { NewTransactionModal } from './components/NewTransactionModal';
@@ -13,6 +14,11 @@ function App() {
     useState(false);
 
   function handleOpenNewTransactionModal() {
+    gtag('event', 'click_new_transaction', {
+      event_category: 'create transaction',
+      event_label: 'Criando Transação',
+    });
+
     setIsNewTransactionModalOpen(true);
   }
 
