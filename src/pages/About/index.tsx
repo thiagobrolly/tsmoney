@@ -5,12 +5,9 @@ export function About() {
   return (
     <>
       <Helmet>
-        <title>tsmoney | sobre nós</title>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-PV12PBN3DW"
-        />
-        <script>
+        <title>TS Money | sobre nós</title>
+
+        {/* <script>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag() {
@@ -20,7 +17,7 @@ export function About() {
 
             gtag('config', 'G-PV12PBN3DW');
           `}
-        </script>
+        </script> */}
       </Helmet>
       <div>
         <h1>Sobre nós</h1>

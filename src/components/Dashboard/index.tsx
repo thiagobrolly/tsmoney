@@ -8,11 +8,7 @@ export function Dashboard() {
   return (
     <>
       <Helmet>
-        <title>tsmoney</title>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-PV12PBN3DW"
-        />
+        <title>TS Money</title>
       </Helmet>
       <S.Container>
         <Summary />
