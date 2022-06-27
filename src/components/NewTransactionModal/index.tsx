@@ -73,6 +73,7 @@ export function NewTransactionModal({
 
         <S.TransactionTypeContainer>
           <S.RadioBox
+            id="btn_deposit"
             type="button"
             onClick={() => setType('deposit')}
             isActive={type === 'deposit'}
@@ -82,6 +83,7 @@ export function NewTransactionModal({
             <span>Entrada</span>
           </S.RadioBox>
           <S.RadioBox
+            id="btn_withdraw"
             type="button"
             onClick={() => setType('withdraw')}
             isActive={type === 'withdraw'}
