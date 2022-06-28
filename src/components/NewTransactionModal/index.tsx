@@ -48,6 +48,7 @@ export function NewTransactionModal({
       className="react-modal-content"
     >
       <button
+        id="btn-modal-close"
         type="button"
         className="react-modal-close"
         onClick={onRequestClose}
