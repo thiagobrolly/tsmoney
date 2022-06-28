@@ -100,7 +100,9 @@ export function NewTransactionModal({
           onChange={e => setCategory(e.target.value)}
         />
 
-        <button type="submit">Cadastrar</button>
+        <button id="btn_cadastrar" type="submit">
+          Cadastrar
+        </button>
       </S.Container>
     </Modal>
   );
