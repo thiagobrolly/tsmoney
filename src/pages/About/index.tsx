@@ -6,18 +6,6 @@ export function About() {
     <>
       <Helmet>
         <title>TS Money | sobre nós</title>
-
-        {/* <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-
-            gtag('config', 'G-PV12PBN3DW');
-          `}
-        </script> */}
       </Helmet>
       <div>
         <h1>Sobre nós</h1>
